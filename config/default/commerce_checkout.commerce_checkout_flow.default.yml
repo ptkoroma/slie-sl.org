@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: 5BYvSDemm8xYwB9rMGFuEuGK6FxVheqtXEUxnpKO2N4
-label: Default
+label: Master
 id: default
 plugin: multistep_default
 configuration:

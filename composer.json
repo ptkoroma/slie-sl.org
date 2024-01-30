@@ -121,7 +121,8 @@
         "drupal/views_role_based_global_text": "^3.1",
         "drupal/multiselect": "^1.2",
         "drupal/ggroup": "^1.0@alpha",
-        "drupal/ludwig": "^1.12"
+        "drupal/ludwig": "^1.12",
+        "drupal/rest_api_authentication": "^2.0"
     },
     "require-dev": {
         "drush/drush": "^10 || ^11",

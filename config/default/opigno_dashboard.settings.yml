@@ -341,9 +341,6 @@ blocks:
   'superfish:footer':
     available: 0
     mandatory: 0
-  'superfish:main':
-    available: 0
-    mandatory: 0
   'superfish:members-area':
     available: 0
     mandatory: 0

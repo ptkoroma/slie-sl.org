@@ -11,7 +11,7 @@ dependencies:
 id: mainnavigation
 theme: aristotle
 region: menu
-weight: 0
+weight: -22
 provider: null
 plugin: 'system_menu_block:main'
 settings:

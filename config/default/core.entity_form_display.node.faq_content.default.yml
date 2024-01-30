@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.faq_content.field_question
     - field.field.node.faq_content.field_question_
     - field.field.node.faq_content.field_tags_faq
+    - field.field.node.faq_content.field_title
     - field.field.node.faq_content.field_topic
     - field.field.node.faq_content.field_upload_supporting_document
     - image.style.thumbnail
@@ -79,6 +80,14 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_topic:
     type: text_textfield
     weight: 0
@@ -101,6 +110,14 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 6
@@ -119,4 +136,3 @@ hidden:
   path: true
   promote: true
   sticky: true
-  title: true

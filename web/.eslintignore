@@ -4,5 +4,6 @@ sites/**/files/**/*
 libraries/**/*
 sites/**/libraries/**/*
 profiles/**/libraries/**/*
+/.ddev
 **/js_test_files/**/*
 **/node_modules/**/*

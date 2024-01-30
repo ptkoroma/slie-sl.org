@@ -44,9 +44,9 @@ definitions:
     expanded: true
     enabled: true
   opigno_lms__catalogue:
+    weight: -48
     menu_name: main
     parent: ''
-    weight: -9
     expanded: false
     enabled: true
   opigno_lms__messages:
@@ -56,9 +56,9 @@ definitions:
     expanded: false
     enabled: false
   opigno_lms__calendar:
+    weight: -47
     menu_name: main
     parent: ''
-    weight: -7
     expanded: false
     enabled: false
   opigno_lms__achievements:
@@ -68,14 +68,20 @@ definitions:
     expanded: false
     enabled: false
   opigno_lms__statistics:
+    weight: -46
     menu_name: main
     parent: ''
-    weight: -5
     expanded: false
     enabled: false
   opigno_lms__home:
+    weight: -50
     menu_name: main
     parent: ''
-    weight: -10
+    enabled: true
     expanded: false
+  stripe_registration__subscribe:
     enabled: false
+    menu_name: main
+    parent: ''
+    weight: -44
+    expanded: false

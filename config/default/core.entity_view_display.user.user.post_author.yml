@@ -7,6 +7,7 @@ dependencies:
     - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_address
     - field.field.user.user.field_address_new
+    - field.field.user.user.field_api_key
     - field.field.user.user.field_bio
     - field.field.user.user.field_correspondence
     - field.field.user.user.field_created_by
@@ -62,6 +63,7 @@ hidden:
   entity_print_view_word_docx: true
   field_address: true
   field_address_new: true
+  field_api_key: true
   field_bio: true
   field_correspondence: true
   field_created_by: true

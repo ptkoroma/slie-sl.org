@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.storage.node.field_answer_
     - field.storage.node.field_images
+    - field.storage.node.field_question
     - field.storage.node.field_question_
     - field.storage.node.field_tags_faq
     - field.storage.node.field_topic
     - field.storage.node.field_upload_supporting_document
     - image.style.faq_listing_
     - node.type.faq_content
+    - node.type.new_faq_content
     - system.menu.global-panel-navigation
     - taxonomy.vocabulary.category
     - taxonomy.vocabulary.field_of_engineering
@@ -207,10 +209,10 @@ display:
           text: view
           output_url_as_text: true
           absolute: false
-        field_question_:
-          id: field_question_
-          table: node__field_question_
-          field: field_question_
+        field_question:
+          id: field_question
+          table: node__field_question
+          field: field_question
           relationship: none
           group_type: group
           admin_label: ''
@@ -281,7 +283,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"cpd-faq-entries mb-2\">\r\n<span class=\"cpd-faq-topic\"><a href=\"{{ view_node }}\">{{ field_question_ }}</a></span>\r\n<span class=\"cpd-edit-link-faq float-right\">{{ edit_node }}</span>\r\n</div>"
+            text: "<div class=\"cpd-faq-entries mb-2\">\r\n<span class=\"cpd-faq-topic\"> <strong><a href=\"{{ view_node }}\">{{ field_question }}</a></strong></span>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -527,7 +529,7 @@ display:
         - 'user.node_grants:view'
         - user.roles
       tags:
-        - 'config:field.storage.node.field_question_'
+        - 'config:field.storage.node.field_question'
         - 'config:field.storage.node.field_topic'
   block_1:
     id: block_1
@@ -1120,15 +1122,44 @@ display:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          operator: in
           value:
-            faq_content: faq_content
+            new_faq_content: new_faq_content
           group: 1
+          exposed: false
           expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
             operator_limit_selection: false
             operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
         field_topic_value:
           id: field_topic_value
           table: node__field_topic
@@ -1357,5 +1388,5 @@ display:
         - 'user.node_grants:view'
         - user.roles
       tags:
-        - 'config:field.storage.node.field_question_'
+        - 'config:field.storage.node.field_question'
         - 'config:field.storage.node.field_topic'

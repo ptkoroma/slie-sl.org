@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.faq_content.field_question
     - field.field.node.faq_content.field_question_
     - field.field.node.faq_content.field_tags_faq
+    - field.field.node.faq_content.field_title
     - field.field.node.faq_content.field_topic
     - field.field.node.faq_content.field_upload_supporting_document
     - node.type.faq_content
@@ -56,6 +57,7 @@ hidden:
   field_question: true
   field_question_: true
   field_tags_faq: true
+  field_title: true
   field_upload_supporting_document: true
   langcode: true
   private_message_link: true
