@@ -1,0 +1,18 @@
+uuid: 1ecc568c-69d2-46e1-87db-589eccc9c921
+langcode: en
+status: true
+dependencies:
+  module:
+    - jwt
+    - profile
+    - serialization
+id: entity.profile
+plugin_id: 'entity:profile'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - jwt_auth

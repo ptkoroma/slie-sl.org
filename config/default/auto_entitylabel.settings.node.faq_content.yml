@@ -1,5 +1,5 @@
-status: 1
-pattern: ''
+status: 0
+pattern: '[node:nid]'
 escape: false
 preserve_titles: true
 save: false

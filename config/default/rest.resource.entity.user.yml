@@ -1,0 +1,28 @@
+uuid: feb32c45-10f1-4ccb-9565-09a2ed79e55d
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - jwt
+    - jwt_path_auth
+    - rest_api_authentication
+    - serialization
+    - user
+    - users_jwt
+id: entity.user
+plugin_id: 'entity:user'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+  formats:
+    - json
+  authentication:
+    - jwt_auth
+    - rest_api_authentication
+    - users_jwt_auth
+    - basic_auth
+    - jwt_path_auth
+    - cookie

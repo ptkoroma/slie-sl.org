@@ -1,23 +1,20 @@
-uuid: 19852641-9e75-42be-850c-4dff89aeff8d
+uuid: b2b66df3-4003-4b87-8d10-dd055e07a9b3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.faq_content.body
-    - field.field.node.faq_content.field_activity_category_1
+    - field.field.node.faq_content.field_activity_category
     - field.field.node.faq_content.field_answer
-    - field.field.node.faq_content.field_answer_
-    - field.field.node.faq_content.field_field_of_engineering_1
+    - field.field.node.faq_content.field_field_of_engineering
     - field.field.node.faq_content.field_images
     - field.field.node.faq_content.field_question
-    - field.field.node.faq_content.field_question_
     - field.field.node.faq_content.field_tags_faq
-    - field.field.node.faq_content.field_title
     - field.field.node.faq_content.field_topic
     - field.field.node.faq_content.field_upload_supporting_document
     - image.style.thumbnail
     - node.type.faq_content
   module:
+    - entity_form_field_label
     - file
     - image
     - text
@@ -28,27 +25,25 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_activity_category_1:
+  field_activity_category:
     type: options_select
     weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_answer_:
-    type: text_textarea_with_summary
+  field_answer:
+    type: text_textarea
     weight: 5
     region: content
     settings:
-      rows: 9
-      summary_rows: 3
+      rows: 5
       placeholder: ''
-      show_summary: false
     third_party_settings: {  }
-  field_field_of_engineering_1:
+  field_field_of_engineering:
     type: options_select
     weight: 2
     region: content
@@ -56,22 +51,23 @@ content:
     third_party_settings: {  }
   field_images:
     type: image_image
-    weight: 10
+    weight: 11
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_question_:
-    type: text_textarea_with_summary
+  field_question:
+    type: text_textarea
     weight: 4
     region: content
     settings:
-      rows: 9
-      summary_rows: 3
+      rows: 5
       placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
+    third_party_settings:
+      entity_form_field_label:
+        new_label: ''
+        rewrite_label: 0
   field_tags_faq:
     type: string_textarea
     weight: 3
@@ -80,47 +76,41 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_title:
-    type: string_textfield
-    weight: 26
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_topic:
-    type: text_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_upload_supporting_document:
     type: file_generic
-    weight: 9
+    weight: 10
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 6
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 8
+    weight: 9
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 11
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      entity_form_field_label:
+        new_label: Topic
+        rewrite_label: 1
   uid:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 7
     region: content
     settings:
       match_operator: CONTAINS
@@ -129,10 +119,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
-  body: true
-  field_answer: true
-  field_question: true
-  langcode: true
+  field_topic: true
   path: true
   promote: true
   sticky: true

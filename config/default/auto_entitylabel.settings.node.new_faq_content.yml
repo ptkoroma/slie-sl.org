@@ -1,0 +1,9 @@
+status: 1
+pattern: ''
+escape: false
+preserve_titles: true
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.new_faq_content

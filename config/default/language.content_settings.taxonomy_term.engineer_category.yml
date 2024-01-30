@@ -1,0 +1,11 @@
+uuid: 7c686a23-9eeb-48af-99c3-5f533b5dd795
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.engineer_category
+id: taxonomy_term.engineer_category
+target_entity_type_id: taxonomy_term
+target_bundle: engineer_category
+default_langcode: site_default
+language_alterable: false

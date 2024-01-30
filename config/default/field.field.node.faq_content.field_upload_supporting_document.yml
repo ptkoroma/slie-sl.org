@@ -1,4 +1,4 @@
-uuid: d7f4b476-6421-45b2-a762-cb5ec23bf85a
+uuid: 7a896929-f89f-4e91-bf19-181c7e116669
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,7 @@ dependencies:
     - field.storage.node.field_upload_supporting_document
     - node.type.faq_content
   module:
-    - custom_add_another
     - file
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 id: node.faq_content.field_upload_supporting_document
 field_name: field_upload_supporting_document
 entity_type: node

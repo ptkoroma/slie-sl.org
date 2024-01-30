@@ -1,4 +1,4 @@
-uuid: c111fe41-9fc2-4d50-9bb0-1c02d8c276ab
+uuid: c9019900-0df3-4184-bc70-6e023b588c63
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ field_name: field_topic
 entity_type: node
 type: text
 settings:
-  max_length: 60
+  max_length: 255
 module: text
 locked: false
 cardinality: 1

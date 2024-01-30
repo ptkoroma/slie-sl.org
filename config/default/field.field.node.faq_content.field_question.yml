@@ -1,4 +1,4 @@
-uuid: f702172b-252c-4c10-bbd6-3f1718b73080
+uuid: 3f729226-ac8c-4641-a480-901a2e0148ac
 langcode: en
 status: true
 dependencies:
@@ -6,18 +6,13 @@ dependencies:
     - field.storage.node.field_question
     - node.type.faq_content
   module:
-    - custom_add_another
     - text
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 id: node.faq_content.field_question
 field_name: field_question
 entity_type: node
 bundle: faq_content
 label: Question
-description: "Write questions from the point of view of your User.\r\n"
+description: 'Write questions from the point of view of your User.'
 required: true
 translatable: false
 default_value: {  }

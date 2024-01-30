@@ -11,7 +11,6 @@ dependencies:
     - media.type.tft_file
     - media.type.video
     - node.type.about
-    - node.type.faq_content
     - node.type.news
     - node.type.page
     - node.type.resoures
@@ -81,7 +80,6 @@ permissions:
   - 'create about content'
   - 'create commerce_product_attribute'
   - 'create default commerce_product'
-  - 'create faq_content content'
   - 'create image media'
   - 'create image_png media'
   - 'create learning_path group'
@@ -106,7 +104,6 @@ permissions:
   - 'delete any about content'
   - 'delete any audio media'
   - 'delete any default commerce_product'
-  - 'delete any faq_content content'
   - 'delete any image media'
   - 'delete any learning_path_product commerce_product'
   - 'delete any media'
@@ -115,11 +112,9 @@ permissions:
   - 'delete any tft_file media'
   - 'delete certificate entities'
   - 'delete commerce_product_attribute'
-  - 'delete faq_content revisions'
   - 'delete media'
   - 'delete module entities'
   - 'delete own default commerce_product'
-  - 'delete own faq_content content'
   - 'delete own image media'
   - 'delete own image_png media'
   - 'delete own learning_path_product commerce_product'
@@ -136,7 +131,6 @@ permissions:
   - 'edit activity entities'
   - 'edit answer entities'
   - 'edit any audio media'
-  - 'edit any faq_content content'
   - 'edit any image media'
   - 'edit any image_png media'
   - 'edit any pdf_file media'
@@ -146,7 +140,6 @@ permissions:
   - 'edit module entities'
   - 'edit own audio media'
   - 'edit own comments'
-  - 'edit own faq_content content'
   - 'edit own image media'
   - 'edit own pdf_file media'
   - 'edit own tft_file media'
@@ -163,7 +156,6 @@ permissions:
   - 'message all groups'
   - 'message anyone regardless of groups'
   - 'revert all answer revisions'
-  - 'revert faq_content revisions'
   - 'tft access file tree'
   - 'tft add a file to any term'
   - 'tft add child terms'
@@ -182,7 +174,6 @@ permissions:
   - 'view all media revisions'
   - 'view commerce_product_attribute'
   - 'view default commerce_product'
-  - 'view faq_content revisions'
   - 'view learning_path_product commerce_product'
   - 'view own members_forum content'
   - 'view own news content'

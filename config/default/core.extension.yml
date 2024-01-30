@@ -58,12 +58,14 @@ module:
   entity_browser: 0
   entity_browser_entity_form: 0
   entity_embed: 0
+  entity_form_field_label: 0
   entity_print: 0
   entity_reference_revisions: 0
   feeds: 0
   feeds_ex: 0
   field: 0
   field_group: 0
+  field_label: 0
   field_ui: 0
   file: 0
   filter: 0

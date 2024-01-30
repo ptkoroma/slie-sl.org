@@ -122,7 +122,10 @@
         "drupal/multiselect": "^1.2",
         "drupal/ggroup": "^1.0@alpha",
         "drupal/ludwig": "^1.12",
-        "drupal/rest_api_authentication": "^2.0"
+        "drupal/rest_api_authentication": "^2.0",
+        "drupal/ds": "^3.16",
+        "drupal/field_label": "^1.3",
+        "drupal/entity_form_field_label": "^2.0"
     },
     "require-dev": {
         "drush/drush": "^10 || ^11",
